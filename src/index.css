@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f5f0e8;
+  --color-forest: #2d4a32;
+  --color-forest-light: #3d6a45;
+  --color-bark: #8b6f47;
+  --color-bark-light: #a88b63;
+  --color-stone: #6b6b6b;
+  --color-charcoal: #2c2c2c;
+  --color-mint: #7a9b76;
+  --color-sky: #e8f0f5;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-charcoal font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-forest text-cream;
+  }
+}
+
+@layer utilities {
+  .content-section {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}

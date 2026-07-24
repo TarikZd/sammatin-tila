@@ -175,7 +175,7 @@ export const content: Content = {
           "No open fires",
           "No caravan or tent without permission",
         ],
-        image: { src: "/images/farm-landscape.webp", alt: "Hauenmaa log cabin by the lake", hero: false },
+        image: { src: "/images/hauenmaa-tripadvisor.webp", alt: "Hauenmaa log cabin exterior", hero: false },
         gallery: [
           { src: "/images/farm-landscape.webp", alt: "Hauenmaa cabin exterior" },
           { src: "/images/villakko-interior-1.webp", alt: "Hauenmaa living room" },
@@ -218,7 +218,7 @@ export const content: Content = {
           "No open fires",
           "No caravan or tent without permission",
         ],
-        image: { src: "/images/farm-landscape.webp", alt: "Matikka log cabin by the lake", hero: false },
+        image: { src: "/images/cabins-hero.webp", alt: "Matikka log cabin in lakeside landscape", hero: false },
         gallery: [
           { src: "/images/farm-landscape.webp", alt: "Matikka cabin exterior" },
           { src: "/images/villakko-interior-2.webp", alt: "Matikka living room" },

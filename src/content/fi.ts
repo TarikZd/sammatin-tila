@@ -175,7 +175,7 @@ export const content: Content = {
           "Avotuli kielletty",
           "Ei asuntoautoa tai telttaa ilman lupaa",
         ],
-        image: { src: "/images/farm-landscape.webp", alt: "Hauenmaa hirsihuvila järvimaisemassa", hero: false },
+        image: { src: "/images/hauenmaa-tripadvisor.webp", alt: "Hauenmaa hirsihuvila ulkoa", hero: false },
         gallery: [
           { src: "/images/farm-landscape.webp", alt: "Hauenmaa mökki ulkoa" },
           { src: "/images/villakko-interior-1.webp", alt: "Hauenmaa olohuone" },
@@ -218,7 +218,7 @@ export const content: Content = {
           "Avotuli kielletty",
           "Ei asuntoautoa tai telttaa ilman lupaa",
         ],
-        image: { src: "/images/farm-landscape.webp", alt: "Matikka hirsihuvila järven rannalla", hero: false },
+        image: { src: "/images/cabins-hero.webp", alt: "Matikka hirsihuvila järvimaisemassa", hero: false },
         gallery: [
           { src: "/images/farm-landscape.webp", alt: "Matikka mökki ulkoa" },
           { src: "/images/villakko-interior-2.webp", alt: "Matikka olohuone" },

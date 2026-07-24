@@ -1,8 +1,8 @@
-# Release Notes — v1.0.0-rc1
+# Release Notes — v1.0.0
 
-## Sammatin tila Website — Initial Release Candidate
+## Sammatin tila Website — Initial Release
 
-We are pleased to announce the first release candidate of the Sammatin tila website — a modern, responsive, bilingual single-page application for the farm's digital presence.
+We are pleased to announce the initial release of the Sammatin tila website — a modern, responsive, bilingual single-page application for the farm's digital presence.
 
 ### What's Included
 

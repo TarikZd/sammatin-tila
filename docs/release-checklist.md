@@ -1,4 +1,4 @@
-# Release Checklist — v1.0.0-rc1
+# Release Checklist — v1.0.0
 
 ## Pre-release
 
@@ -63,7 +63,7 @@
 
 ## Deployment
 
-- [ ] Production branch tagged: `v1.0.0-rc1`
+- [ ] Production branch tagged: `v1.0.0`
 - [ ] Deployed to production URL
 - [ ] Post-deployment smoke test passed
 - [ ] DNS and SSL verified

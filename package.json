@@ -1,7 +1,7 @@
 {
   "name": "sammatin-tila-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,14 +10,15 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2",
-    "vite": "^8.1.1"
+    "vite": "^8.1.1",
+    "wrangler": "^4.114.0"
   },
   "dependencies": {
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
     "framer-motion": "^12.42.2",
     "lucide-react": "^1.26.0",
     "react": "^19.2.8",

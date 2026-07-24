@@ -6,16 +6,6 @@ Lypsykarjatila ja lomamökit Ylöjärvellä. Perhemaatilamme tarjoaa naudanlihaa
 
 ---
 
-## Screenshots
-
-![Desktop hero](./docs/screenshots/hero-desktop.png)  
-![Mobile navigation](./docs/screenshots/mobile-nav.png)  
-![Products section](./docs/screenshots/products.png)
-
-> Kuvakaappaukset löytyvät kansiosta `docs/screenshots/`.
-
----
-
 ## Tech Stack
 
 | Layer | Technology |
@@ -71,14 +61,12 @@ sammatin-tila-website/
 │   └── index.css        # Design system + component utilities
 │
 ├── docs/
-│   ├── checklists/      # Reusable quality checklists (7)
 │   ├── research/        # Business research and references
 │   ├── design-system.md
-│   ├── generic-content-model.md
-│   ├── opencode-template-prompt.md
 │   ├── portfolio-case-study.md
+│   ├── release-checklist.md
+│   ├── release-notes.md
 │   ├── roadmap.md
-│   ├── template-extraction.md
 │   └── maintenance.md
 │
 ├── CHANGELOG.md
@@ -92,8 +80,8 @@ sammatin-tila-website/
 
 | Metric | Value |
 |--------|-------|
-| Total JS | 378 KB (117 KB gzip) |
-| Total CSS | 39 KB (7 KB gzip) |
+| Total JS | 377 KB (117 KB gzip) |
+| Total CSS | 40 KB (7 KB gzip) |
 | HTML | 6 KB |
 | Images | 27 WebP (avg 50-100 KB) |
 | Font | Inter (Google Fonts, preconnected) |

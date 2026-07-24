@@ -4,7 +4,7 @@
 
 A complete digital modernization of a Finnish family dairy farm's online presence. The client needed a single-page website that communicates quality, nature, and hospitality across two languages (Finnish and English), with sections for the farm story, products, rental cabins, photo gallery, location, and contact.
 
-**Website:** [sammatintila.fi](https://www.sammatintila.fi) (placeholder)  
+**Website:** [sammatintila.fi](https://www.sammatintila.fi)  
 **Timeline:** 2 weeks (research → design → build → QA → documentation)  
 **Role:** Lead engineer, designer, researcher  
 **Stack:** React 19, TypeScript, Vite 6, Tailwind CSS v4, Framer Motion 12
@@ -219,7 +219,7 @@ Total: 27 WebP image files + 12 placeholder files = 39 assets.
 2. **Design utility layer** — Tailwind utility classes for section padding, headings, and cards enforced visual consistency across all 10 components without CSS duplication.
 3. **Parallel documentation** — writing documentation during development rather than after caught inconsistencies early.
 4. **CSS masonry over JS library** — `columns-2 md:columns-3` with `break-inside: avoid` gave free responsive gallery without a DOM library.
-5. **Reusable animation objects** — `fadeInUp`, `fadeInLeft`, `fadeInRight` object literals imported from a shared file would have eliminated duplication (extracted in template).
+5. **Reusable animation objects** — `fadeInUp`, `fadeInLeft`, `fadeInRight` object literals imported from a shared file would have eliminated duplication.
 
 ### What Could Improve
 
@@ -247,4 +247,4 @@ See `docs/roadmap.md` for the full breakdown. Key priorities:
 
 **GitHub:** (private — available on request)  
 **Stack:** React 19 + TypeScript + Vite 6 + Tailwind v4 + Framer Motion 12  
-**Status:** v1.0.0-rc1 — production-ready
+**Status:** v1.0.0 — production-ready

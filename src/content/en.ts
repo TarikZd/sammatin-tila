@@ -340,8 +340,8 @@ export const content: Content = {
       successMessage: "Thank you for your message! We will get back to you as soon as possible.",
       errorMessage: "An error occurred while sending your message. Please try again or contact us by phone.",
     },
-    openingHours: "Self-service shop open 24/7. Cabin check-in by arrangement.",
-    note: "Note: The farm does not use WhatsApp. We are best reached by phone or email.",
+    openingHours: "Self-service beef shop open 24/7.",
+    note: "For farm inquiries and cabin reservations, please contact us by phone or email. We are happy to assist you.",
   },
 
   footer: {

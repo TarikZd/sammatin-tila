@@ -340,8 +340,8 @@ export const content: Content = {
       successMessage: "Kiitos viestistäsi! Otamme yhteyttä mahdollisimman pian.",
       errorMessage: "Viestin lähetyksessä tapahtui virhe. Yritä uudelleen tai ota yhteyttä puhelimitse.",
     },
-    openingHours: "Itsepalvelumyymälä avoinna 24/7. Mökkien sisäänkirjautuminen sovitusti.",
-    note: "Huom. Tilalla ei ole WhatsApp-yhteyttä. Tavoitat meidät parhaiten puhelimitse tai sähköpostitse.",
+    openingHours: "Itsepalvelulihamyymälä avoinna 24/7.",
+    note: "Tilaa koskevat tiedustelut ja mökkivaraukset puhelimitse tai sähköpostitse. Autamme mielellämme.",
   },
 
   footer: {

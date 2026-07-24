@@ -11,10 +11,18 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function App() {
+  const mainId = "main-content";
+
   return (
     <LangProvider>
+      <a
+        href={`#${mainId}`}
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-cream focus:text-forest focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-forest/50"
+      >
+        Siirry sisältöön
+      </a>
       <Navigation />
-      <main>
+      <main id={mainId}>
         <Hero />
         <About />
         <History />

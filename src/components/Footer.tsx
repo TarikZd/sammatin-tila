@@ -47,12 +47,23 @@ export default function Footer() {
   const c = useContent();
 
   return (
-    <footer className="bg-charcoal text-cream/80 py-12">
-      <div className="content-section">
+    <footer className="bg-charcoal text-cream/70">
+      <div className="content-section py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-sm">{c.footer.copyright}</p>
+          <div className="flex items-center gap-6">
+            <p className="text-sm">{c.footer.copyright}</p>
+            {c.footer.links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-sm text-cream/50 hover:text-cream transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             {c.footer.social.map((link) => (
               <a
                 key={link.label}
@@ -60,9 +71,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.label}
-                className="p-2 rounded-full hover:bg-cream/10 transition-colors"
+                className="p-2.5 rounded-full text-cream/50 hover:text-cream hover:bg-cream/10 transition-all duration-200"
               >
-                {iconMap[link.icon](18)}
+                {iconMap[link.icon](16)}
               </a>
             ))}
           </div>

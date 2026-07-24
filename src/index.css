@@ -10,6 +10,8 @@
   --color-charcoal: #2c2c2c;
   --color-mint: #7a9b76;
   --color-sky: #e8f0f5;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
 @layer base {
@@ -24,10 +26,34 @@
   ::selection {
     @apply bg-forest text-cream;
   }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-forest;
+  }
 }
 
 @layer utilities {
   .content-section {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-6xl mx-auto px-5 sm:px-8 lg:px-10;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-forest;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-forest/5 shadow-sm;
+  }
+
+  .card-hover {
+    @apply hover:shadow-md hover:-translate-y-0.5 transition-all duration-300;
+  }
+
+  .pill {
+    @apply px-3 py-1 text-xs font-medium rounded-full bg-forest/10 text-forest;
   }
 }

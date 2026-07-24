@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 import type { Lang, Content } from "../lib/types";
 import { getContent } from "../lib/utils";
 
@@ -14,6 +14,11 @@ export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>("fi");
 
   const toggle = () => setLang((l) => (l === "fi" ? "en" : "fi"));
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    document.documentElement.dataset.lang = lang;
+  }, [lang]);
 
   return (
     <LangContext.Provider value={{ lang, toggle, content: getContent(lang) }}>

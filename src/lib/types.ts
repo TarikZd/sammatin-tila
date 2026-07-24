@@ -1,4 +1,5 @@
 export interface Content {
+  site: SiteMeta;
   lang: Language;
   navigation: Navigation;
   hero: Hero;
@@ -7,9 +8,17 @@ export interface Content {
   products: Products;
   cabins: Cabins;
   gallery: GallerySection;
-  location: LocationSection;
+  visit: Visit;
   contact: Contact;
   footer: Footer;
+}
+
+export interface SiteMeta {
+  url: string;
+  title: string;
+  description: string;
+  ogImage: string;
+  keywords: string;
 }
 
 export interface Language {
@@ -70,6 +79,14 @@ export interface Products {
   subtitle: string;
   categories: ProductCategory[];
   note: string;
+  dairySection: DairySection;
+}
+
+export interface DairySection {
+  title: string;
+  body: string[];
+  breeds: string;
+  production: string;
 }
 
 export interface ProductCategory {
@@ -88,26 +105,43 @@ export interface Cabins {
   title: string;
   subtitle: string;
   cabins: Cabin[];
-  commonRules: string[];
+  commonInfo: CommonCabinInfo;
+}
+
+export interface CommonCabinInfo {
+  linens: string;
+  firewood: string;
+  cleaning: string;
+  noPets: string;
+  noSmoking: string;
+  noOpenFire: string;
+  noTent: string;
 }
 
 export interface Cabin {
+  id: string;
   name: string;
   tagline: string;
   description: string[];
   capacity: string;
   size: string;
   built: string;
-  features: string[];
-  price: string;
+  layout: string[];
+  amenities: string[];
+  extras: string[];
+  restrictions: string[];
+  image: CabinImage;
+  gallery: GalleryImage[];
   bookingUrl: string;
-  image: string;
-  imageAlt: string;
+  contactName: string;
+  contactPhone: string;
+  contactEmail: string;
 }
 
-export interface GallerySection {
-  title: string;
-  images: GalleryImage[];
+export interface CabinImage {
+  src: string;
+  alt: string;
+  hero: boolean;
 }
 
 export interface GalleryImage {
@@ -116,11 +150,28 @@ export interface GalleryImage {
   caption?: string;
 }
 
-export interface LocationSection {
+export interface GallerySection {
+  title: string;
+  images: GalleryImage[];
+}
+
+export interface Visit {
   title: string;
   address: string;
+  coordinates: Coordinates;
   description: string;
+  distances: Distance[];
   mapEmbedUrl: string;
+}
+
+export interface Coordinates {
+  lat: number;
+  lng: number;
+}
+
+export interface Distance {
+  destination: string;
+  duration: string;
 }
 
 export interface Contact {
@@ -128,6 +179,9 @@ export interface Contact {
   subtitle: string;
   farm: ContactBlock;
   cabins: ContactBlock;
+  form: ContactForm;
+  openingHours: string;
+  note: string;
 }
 
 export interface ContactBlock {
@@ -137,15 +191,38 @@ export interface ContactBlock {
   address?: string;
 }
 
+export interface ContactForm {
+  title: string;
+  nameLabel: string;
+  namePlaceholder: string;
+  emailLabel: string;
+  emailPlaceholder: string;
+  subjectLabel: string;
+  subjectPlaceholder: string;
+  messageLabel: string;
+  messagePlaceholder: string;
+  sendLabel: string;
+  successMessage: string;
+  errorMessage: string;
+}
+
 export interface Footer {
   copyright: string;
   social: SocialLink[];
+  links: FooterLink[];
 }
 
 export interface SocialLink {
   label: string;
   url: string;
-  icon: "facebook" | "instagram" | "email";
+  icon: SocialIcon;
+}
+
+export type SocialIcon = "facebook" | "instagram" | "email";
+
+export interface FooterLink {
+  label: string;
+  href: string;
 }
 
 export type Lang = "fi" | "en";
